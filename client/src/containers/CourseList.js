@@ -51,8 +51,7 @@ const courses = [
 ]
 
 const Wrapper = styled.div`
-    background-color: pink;
-    padding: 30px;
+    padding: 50px 350px;
     display:flex;
     flex-wrap: wrap;
 `
@@ -67,6 +66,7 @@ class CourseList extends Component {
                         name={course.name}
                         image={course.image}
                         number={course.number}
+                        key={index}
                     />
                 )}
             </Wrapper>

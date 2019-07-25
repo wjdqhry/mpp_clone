@@ -5,6 +5,7 @@ const Poster = styled.img`
     width:100%;
     margin-top:70px;
     padding:0;
+    display: block;
 `
 
 class HeaderPoster extends Component {
