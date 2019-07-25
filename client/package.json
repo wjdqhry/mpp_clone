@@ -5,6 +5,7 @@
   "dependencies": {
     "cross-env": "^5.2.0",
     "crossenv": "^0.0.2-security",
+    "open-color": "^1.7.0",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
     "react-scripts": "3.0.1",
