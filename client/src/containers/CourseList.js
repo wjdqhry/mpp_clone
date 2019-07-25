@@ -1,4 +1,6 @@
 import React, { Component } from 'react';
+import Course from "components/Course";
+import styled from "styled-components"
 
 const courses = [
     {
@@ -48,13 +50,26 @@ const courses = [
     }
 ]
 
+const Wrapper = styled.div`
+    background-color: pink;
+    padding: 30px;
+    display:flex;
+    flex-wrap: wrap;
+`
+
 class CourseList extends Component {
 
     render() {
         return (
-            <div>
-                {courses.map((course, index) => course.name)}
-            </div>
+            <Wrapper>
+                {courses.map((course, index) =>
+                    <Course
+                        name={course.name}
+                        image={course.image}
+                        number={course.number}
+                    />
+                )}
+            </Wrapper>
         );
     }
 }
