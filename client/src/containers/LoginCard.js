@@ -18,7 +18,7 @@ const Card = styled.div`
     border-radius: 10px;
     background-color: ${oc.violet[1]};
     padding: 0 50px;
-    padding-top: 50px
+    padding-top: 50px;
 `
 
 const LoginTitle = styled.span`
