@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import styled from "styled-components";
 import oc from "open-color";
+import {Link} from "react-router-dom";
 
 const Positioner = styled.div`
   position: fixed;
@@ -101,7 +102,11 @@ class HeaderContainer extends Component {
               <SearchButton>검색</SearchButton>
             </SearchForm>
             <Spacer />
-            <LoginButton>로그인</LoginButton>
+            <Link to="/Login">
+              <LoginButton>
+                로그인
+              </LoginButton>
+            </Link>
           </HeaderContents>
         </Whitebox>
       </Positioner>

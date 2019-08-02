@@ -51,7 +51,7 @@ const courses = [
 ]
 
 const Wrapper = styled.div`
-    padding: 50px 350px;
+    padding: 50px 170px;
     display:flex;
     flex-wrap: wrap;
 `

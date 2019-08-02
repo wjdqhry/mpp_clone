@@ -4,7 +4,7 @@ import oc from "open-color";
 
 const Wrapper = styled.div`
     width: 25%;
-    height: 500px;
+    height: 420px;
     padding: 20px;
     box-sizing: border-box;
     transition: 0.125s all ease-in;
@@ -26,7 +26,7 @@ const WhiteBox = styled.div`
 
 const Image = styled.img`
     width: 100%;
-    height: 40%;
+    height: 42%;
 `
 const InfoSection = styled.div`
     padding: 20px;
@@ -35,7 +35,7 @@ const InfoSection = styled.div`
 `
 
 const NameStyle = styled.span`
-    font-size: 1.5rem;
+    font-size: 1.4rem;
     color: ${oc.indigo[4]};
     padding: 5px 0px;
 `
