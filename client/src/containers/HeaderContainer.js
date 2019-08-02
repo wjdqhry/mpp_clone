@@ -96,7 +96,9 @@ class HeaderContainer extends Component {
         <Whitebox>
           <HeaderContents>
             <Logo>GSM</Logo>
-            <Notice>공지사항</Notice>
+            <Link to="/notice" style={{textDecoration: 'none', color:'black'}}>
+              <Notice>공지사항</Notice>
+            </Link>
             <SearchForm>
               <SearchInput placeholder="강좌찾기" />
               <SearchButton>검색</SearchButton>
