@@ -12,6 +12,7 @@ const ListText = styled.p`
     text-align: left;
     margin: auto 10%;
     margin-right: 200px;
+    margin-left: 11%;
 `
 
 const Spacer = styled.div`

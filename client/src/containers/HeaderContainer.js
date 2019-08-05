@@ -95,7 +95,9 @@ class HeaderContainer extends Component {
       <Positioner>
         <Whitebox>
           <HeaderContents>
-            <Logo>GSM</Logo>
+            <Link to="/" style={{textDecoration: 'none', color:'black'}}>
+              <Logo>GSM</Logo>
+            </Link>
             <Link to="/notice" style={{textDecoration: 'none', color:'black'}}>
               <Notice>공지사항</Notice>
             </Link>
