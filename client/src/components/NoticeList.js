@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import styled from "styled-components";
 import oc from "open-color";
+import { Link } from "react-router-dom";
 
 const Card = styled.div`
     display: flex;
@@ -26,7 +27,9 @@ class NoticeList extends Component {
             <Card>
                 <ListText>{this.props.number}</ListText>
                 <Spacer/>
-                <ListText>{this.props.name}</ListText>
+                <Link to="/noticedetail" style={{textDecoration: 'none', color:'black', marginTop:20, marginLeft:140}}>
+                    <ListText>{this.props.name}</ListText>
+                </Link>
                 <Spacer/>
                 <ListText>{this.props.date}</ListText>
             </Card>
