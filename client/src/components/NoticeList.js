@@ -21,13 +21,21 @@ const Spacer = styled.div`
 `
 
 class NoticeList extends Component {
-
     render() {
         return (
             <Card>
                 <ListText>{this.props.number}</ListText>
                 <Spacer/>
-                <Link to="/noticedetail" style={{textDecoration: 'none', color:'black', marginTop:20, marginLeft:140}}>
+                <Link to={{
+                    pathname: "/noticedetail",
+                    state: {
+                        name: this.props.name,
+                        date: this.props.date,
+                        content: this.props.content,
+                        number: this.props.number
+                    }
+                }} 
+                style={{textDecoration: 'none', color:'black', marginTop:20, marginLeft:140}}>
                     <ListText>{this.props.name}</ListText>
                 </Link>
                 <Spacer/>

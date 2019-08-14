@@ -8,7 +8,10 @@ class NoticeDetail extends Component {
         return (
             <>
                 <HeaderContainer/>
-                <NoticeDetailCard/>
+                <NoticeDetailCard 
+                    name={this.props.location.name} 
+                    date={this.props.location.date} 
+                    content={this.props.location.content}/>
             </>
         );
     }

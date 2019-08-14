@@ -3,7 +3,7 @@ import { Route } from 'react-router-dom';
 import Home from "pages/Home";
 import Login from "pages/Login";
 import Notice from "pages/Notice";
-import NoticeDetail from "./pages/NoticeDetail";
+import NoticeDetail from "pages/NoticeDetail";
 
 function App() {
   return (

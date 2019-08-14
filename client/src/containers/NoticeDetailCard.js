@@ -1,7 +1,6 @@
 import React, { Component } from "react";
 import styled from "styled-components";
 import oc from "open-color";
-import {Link} from "react-router-dom";
 
 const Card = styled.div`
     display: flex;
@@ -18,9 +17,6 @@ const NoticeText = styled.h1`
     border-bottom: 1px solid #ccc;
 `
 
-const Spacer = styled.div`
-  flex:1;
-`
 
 const NoticeLists = styled.div`
     height: 260px;
@@ -30,12 +26,15 @@ const NoticeLists = styled.div`
     flex-direction: column;
 `
 
+
+
 class NoticeDetailCard extends Component {
   render() {
     return (
         <Card>
             <NoticeText>공지사항상세</NoticeText>
-            <NoticeLists></NoticeLists>
+            <NoticeLists>{this.props.content}</NoticeLists>
+            {console.log(this.props.content)}
         </Card>
     );
   }

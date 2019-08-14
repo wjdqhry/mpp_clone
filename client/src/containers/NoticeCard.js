@@ -11,7 +11,6 @@ const Card = styled.div`
     width: 80%;
     height: 100%;
 `
-
 const NoticeText = styled.h1`
     margin-top: 40px;
     padding-bottom: 10px;
@@ -78,12 +77,14 @@ const notices = [
     {
         name: "MPP 학습 매뉴얼",
         number: "1",
-        date: "2019-04-26"
+        date: "2019-04-26",
+        content: "광주소프트웨어마이스터고등학교 MPP 학습사이트에 오신걸 환영합니다. 학습 매뉴얼을 통해 기본적인 학습 방법을 살펴보시고, 비밀번호 재설정 기능을 통해 초기 비밀번호를 변경하여 주시기 바랍니다. -MPP운영팀-"
     },
     {
         name: "MPP 브라우저 자동번역기 활용 방법",
         number: "2",
-        date: "2019-04-26"
+        date: "2019-04-26",
+        content: "브라우저에서 자동으로 한글 번역기를 활용할 수 있는 방법을 안내합니다. -MPP 운영팀-"
     }
 ]
 
@@ -106,7 +107,7 @@ class NoticeCard extends Component {
                                 <ListText>날짜</ListText>
                             </ListInfo>
                             {notices.map((notice)=>
-                                    <NoticeList name={notice.name} date={notice.date} number={notice.number}/>
+                                    <NoticeList name={notice.name} date={notice.date} number={notice.number} content={notice.content} key={notice.number} />
                                 )}
                         </NoticeLists>
                     </NoticeChart>
